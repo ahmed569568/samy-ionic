@@ -11,6 +11,15 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'shared',
+    loadChildren: () => import('./shared/shared.module').then( m => m.SharedPageModule)
+  },
+  {
+    path: 'absence',
+    loadChildren: () => import('./absence/absence.module').then( m => m.AbsencePageModule)
+  },
+
 ];
 
 @NgModule({

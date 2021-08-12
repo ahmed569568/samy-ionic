@@ -1,4 +1,5 @@
 .main-card {
+  margin-top: 120px;
   ion-card {
     margin: 0;
     border-radius: 22px;
@@ -7,7 +8,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-items: center;
     background-color: unset !important;
+    height: 66px;
+    .hours {
+      line-height: 0;
+      margin-bottom: 18px;
+    }
   }
   .card-body {
     background: #a6dede2e;
@@ -27,10 +34,6 @@
     width: 2px;
     height: 40px;
   }
-  .scroll-y {
-    overflow-y: unset;
-  }
-
   .funnel,
   .filter {
     background-color: #ff00001a;
@@ -41,22 +44,8 @@
     font-size: 20px;
     color: red;
   }
-
   ion-tab-bar {
     box-shadow: 10px 15px 22px 10px;
     padding: 15px 0;
   }
-  ion-tab-button {
-    ion-icon {
-      &:hover {
-        color: red;
-      }
-    }
-  }
-}
-.outline {
-  background-color: red;
-}
-.alarm {
-  background-color: blue;
 }
